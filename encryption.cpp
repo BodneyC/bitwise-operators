@@ -2,7 +2,7 @@
 
 #include <vector>
 
-std::vector<char> encrypt_message (std::vector<char> message, std::vector<char> key)
+std::vector<char> encrypt_message (std::vector<char> &message, std::vector<char> &key)
 {
     for (int letter = 0; letter < message.size(); letter++)
     {
