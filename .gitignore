@@ -1,1 +1,6 @@
 .vscode
+.clangd
+compile_commands.json
+main
+obj/*
+!obj/.keep

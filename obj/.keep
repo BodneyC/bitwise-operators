@@ -1,0 +1,17 @@
+Usually I wouldn't add any text content to this file, it would exist solely as a
+marker, something for git to track (see the .gitignore file for related changes)
+but I do have a couple points to make here:
+
+  1) People often call this file `.gitkeep`, don't do this. People do it because
+  of the naming of the `.gitignore` file, however `git` as a system is aware of
+  that file, you could call it an "official" git file... `.gitkeep` however, is
+  not a part of the larger git system - call this picky if you will but good git
+  practice is valuable and often overlooked
+
+  2) The compilation of this program **now** requires spitting out some object
+  files (we'll cover this when we look at compilation, see Makefile for
+  practical differences). I don't want to upload arch-specific object files to
+  git but I want users to just type `make` without getting "no such dir: obj".
+  This gives us two options, put `mkdir -p obj` in the Makefile... which is fine
+  for Unix-ish systems... but not for DOS... or include the directory only in
+  the repo - I'd choose the latter

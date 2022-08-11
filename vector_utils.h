@@ -1,9 +1,12 @@
+#ifndef VECTOR_UTILS_H
+#define VECTOR_UTILS_H
+
+/*
+ * See encryption.h for why these includes are moved
+ */
 #include <vector>
 #include <fstream>
 #include <string>
-
-#ifndef VECTOR_UTILS_H
-#define VECTOR_UTILS_H
 
 void print_vector_to_file(std::vector<char> vector, std::ofstream &file);
 
